@@ -1,0 +1,49 @@
+/* client/src/style.css */
+
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* ===== Custom CSS Variables ===== */
+  :root {
+    --primary-gradient: linear-gradient(135deg, #1a237e 0%, #00bfa5 100%);
+    --secondary-gradient: linear-gradient(135deg, #00bfa5 0%, #1a237e 100%);
+  }
+  
+  /* ===== Utility Classes ===== */
+  .text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.12) !important;
+  }
+  
+  /* ===== Override MUI Font ===== */
+  body {
+    font-family: 'Poppins', sans-serif !important;
+  }
+  
+  /* ===== Scrollbar Styling ===== */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
